@@ -1,5 +1,5 @@
-# full-stack-todo
-Todo full stack in django and react
+# TODO
+Todo web application in django
 
 Steps to set up your project
 
