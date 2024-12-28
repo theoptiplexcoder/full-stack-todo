@@ -1,0 +1,9 @@
+# Ignore the env folder
+env/
+
+# Ignore SQLite database file
+db.sqlite3
+
+#other unwanted
+__pycache__/
+.vscode/
