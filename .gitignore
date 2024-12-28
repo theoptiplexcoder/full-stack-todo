@@ -1,5 +1,5 @@
 # Ignore the env folder
-env/
+venv/
 
 # Ignore SQLite database file
 db.sqlite3
