@@ -1,15 +1,28 @@
-{% if request.user.is_authenticated %}
+{% extends '_base.html' %}
+
+{% block content %}
+<div class="nav-container">
+    {% if request.user.is_authenticated %}
 <p>{{request.user}}</p>
 <form action="{% url 'logout' %}" method="post">
     {% csrf_token %}
-    <input type="submit" value="Logout">
+    <input type="submit" value="Logout" class="butt-style">
 </form>
+</div>
+
+
 {% else %}
 <a href="{% url 'login' %}">Login</a>
 {% endif %}
 
 <h1>Task lists</h1>
 <a href="{% url 'task_create' %}">Add task</a>
+
+<form method="GET">
+    <input type="text" name="search-area" id="">
+    <input type="submit" value="Search">
+</form>
+
 <table>
     <tr>
         <th>Item</th>
@@ -26,3 +39,5 @@
     <h3>No items</h3>
     {% endfor %}
 </table>
+
+{% endblock content %}

@@ -1,0 +1,20 @@
+body{
+            background-color:  pink;
+            font-family: "Lilita One";
+}
+
+.container{
+    padding: 30px;
+    margin: auto;
+}
+
+.nav-container{
+width: 900px;
+border: 2px solid black;
+display: flex;
+justify-content: space-between;
+}
+
+.butt-style{
+    border-radius: 2rem;
+}
